@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menunew_file">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionopen_file_2"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsave_as"/>
+    <addaction name="actionnew_file"/>
+    <addaction name="actionnew_window"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actioncopy"/>
+    <addaction name="actioncot"/>
+    <addaction name="actionpaste"/>
+    <addaction name="actionclear"/>
+    <addaction name="actionredo_2"/>
+    <addaction name="actionundo_2"/>
+    <addaction name="actionsearch"/>
+    <addaction name="actionfind"/>
+    <addaction name="actionfind_of"/>
+    <addaction name="actionreplace"/>
+   </widget>
+   <widget class="QMenu" name="menuveiw">
+    <property name="title">
+     <string>veiw</string>
+    </property>
+    <widget class="QMenu" name="menufont_size">
+     <property name="title">
+      <string>zoom</string>
+     </property>
+     <addaction name="actionzoom_in"/>
+     <addaction name="actionzoom_out"/>
+     <addaction name="actiondefiult"/>
+    </widget>
+    <widget class="QMenu" name="menufont_color">
+     <property name="title">
+      <string>font-color</string>
+     </property>
+     <addaction name="actionblach"/>
+     <addaction name="actionwhite"/>
+     <addaction name="actionred_2"/>
+     <addaction name="actionblue_2"/>
+     <addaction name="actiongreen"/>
+     <addaction name="actioncostum_color"/>
+    </widget>
+    <widget class="QMenu" name="menutheme_window">
+     <property name="title">
+      <string>theme window</string>
+     </property>
+     <addaction name="actiondark"/>
+     <addaction name="actionlight"/>
+     <addaction name="actionhighlight"/>
+     <addaction name="actionblue"/>
+     <addaction name="actionred"/>
+    </widget>
+    <addaction name="menufont_size"/>
+    <addaction name="menufont_color"/>
+    <addaction name="menutheme_window"/>
+   </widget>
+   <addaction name="menunew_file"/>
+   <addaction name="menuedit"/>
+   <addaction name="menuveiw"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="text">
+    <string>save as</string>
+   </property>
+  </action>
+  <action name="actionopen_file">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actionredo">
+   <property name="text">
+    <string>redo</string>
+   </property>
+  </action>
+  <action name="actionnew_file">
+   <property name="text">
+    <string>new file</string>
+   </property>
+  </action>
+  <action name="actionnew_window">
+   <property name="text">
+    <string>new window</string>
+   </property>
+  </action>
+  <action name="actioncopy">
+   <property name="text">
+    <string>copy</string>
+   </property>
+  </action>
+  <action name="actioncot">
+   <property name="text">
+    <string>cot</string>
+   </property>
+  </action>
+  <action name="actionpaste">
+   <property name="text">
+    <string>paste</string>
+   </property>
+  </action>
+  <action name="actionclear">
+   <property name="text">
+    <string>clear</string>
+   </property>
+  </action>
+  <action name="actionredo_2">
+   <property name="text">
+    <string>redo</string>
+   </property>
+  </action>
+  <action name="actionundo_2">
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actionsearch">
+   <property name="text">
+    <string>search</string>
+   </property>
+  </action>
+  <action name="actionfind">
+   <property name="text">
+    <string>find</string>
+   </property>
+  </action>
+  <action name="actionfind_of">
+   <property name="text">
+    <string>find of</string>
+   </property>
+  </action>
+  <action name="actionreplace">
+   <property name="text">
+    <string>replace</string>
+   </property>
+  </action>
+  <action name="actionzoom">
+   <property name="text">
+    <string>zoom</string>
+   </property>
+  </action>
+  <action name="actionzoom_in">
+   <property name="text">
+    <string>zoom in</string>
+   </property>
+  </action>
+  <action name="actionzoom_out">
+   <property name="text">
+    <string>zoom out</string>
+   </property>
+  </action>
+  <action name="actiondefiult">
+   <property name="text">
+    <string>defiult</string>
+   </property>
+  </action>
+  <action name="actionfont_size_2">
+   <property name="text">
+    <string>font-size</string>
+   </property>
+  </action>
+  <action name="actiondark">
+   <property name="text">
+    <string>dark</string>
+   </property>
+  </action>
+  <action name="actionlight">
+   <property name="text">
+    <string>light</string>
+   </property>
+  </action>
+  <action name="actionhighlight">
+   <property name="text">
+    <string>highlight</string>
+   </property>
+  </action>
+  <action name="actionblue">
+   <property name="text">
+    <string>blue</string>
+   </property>
+  </action>
+  <action name="actionred">
+   <property name="text">
+    <string>red</string>
+   </property>
+  </action>
+  <action name="actionblach">
+   <property name="text">
+    <string>blach</string>
+   </property>
+  </action>
+  <action name="actionwhite">
+   <property name="text">
+    <string>white</string>
+   </property>
+  </action>
+  <action name="actionred_2">
+   <property name="text">
+    <string>red</string>
+   </property>
+  </action>
+  <action name="actionblue_2">
+   <property name="text">
+    <string>blue</string>
+   </property>
+  </action>
+  <action name="actiongreen">
+   <property name="text">
+    <string>green</string>
+   </property>
+  </action>
+  <action name="actioncostum_color">
+   <property name="text">
+    <string>costum color</string>
+   </property>
+  </action>
+  <action name="actionopen_file_2">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
